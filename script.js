@@ -1,12 +1,12 @@
 //your JS code here. If required.
 window.addeventlistener("onload",()=> {
     let element = document.getElementById("level");
-    let level = 0;
+    let n = 0;
 
     while (element) {
-        level++;
+        n++;
         element = element.parentElement;
     }
 
-    alert("The level of the element is: " + level);
+    alert("The level of the element is: " + n);
 });

@@ -1,12 +1,11 @@
-//your JS code here. If required.
-window.addeventlistener("onload",()=> {
+document.addEventListener("DOMContentLoaded", function () {
     let element = document.getElementById("level");
-    let n = 0;
+    let level = 0;
 
     while (element) {
-        n++;
+        level++;
         element = element.parentElement;
     }
 
-    alert("The level of the element is: " + n);
+    alert("The level of the element is: " + level);
 });
